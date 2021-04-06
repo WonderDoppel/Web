@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulario</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--links CCS-->
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel = "stylesheet" type="text/css" href="css/estilos.css">
+        <!--scripts js-->
+        <script src="js/inicio.js" type="text/javascript" charset ="utf-8"></script>
+    </head>
+    <body>
+        
+        <div id="mensaje"></div><!--mensaje del submit-->
+        <form id="form" action ="#"method="POST">
+            <!--formulario-->
+            <ul>
+                <li><!--Nombre-->
+                    <label for ="nombre">Nombre</label>
+                    <input id ="nombre" type="text" placeholder="Nombre" required="true">
+                </li>
+                <li><!--apellidos-->
+                    <label for ="apellidos">Apellidos</label>
+                    <input id ="apellidos" type="text" placeholder="Apellidos" required="true">
+                </li>
+                <li><!--RUT-->
+                    <label for ="rut">Rut</label>
+                    <input id ="rut" type="text" placeholder="Rut" required="true">
+                </li>
+                <li><!--Correo electronico-->
+                    <label for ="email">Correo Electrónico</label>
+                    <input id ="email" type="email" placeholder="Correo Electrónico" required="true">
+                </li>
+                <li><!--telefono de contacto-->
+                    <label for ="telefono">Teléfono</label>
+                    <input id ="telefono" type="number" placeholder="Teléfono" required="true">
+                </li>
+                <li><!--preferencias de lenguajes-->
+                    <span>Seleccione una o más preferencias</span>
+                    <label for = "lenguaje1">C++</label>
+                    <input id ="lenguaje1" type = "checkbox" name="lenguaje1" value="c++">
+                    <label for = "lenguaje2">Java</label>
+                    <input id ="lenguaje2" type = "checkbox" name="lenguaje2" value="java">
+                    <label for = "lenguaje3">Python</label>
+                    <input id ="lenguaje3" type = "checkbox" name="lenguaje3" value="python">
+                    <label for = "lenguaje4">TypeScript</label>
+                    <input id ="lenguaje4" type = "checkbox" name="lenguaje4" value="typescript">
+                    <label for = "lenguaje5">C#</label>
+                    <input id ="lenguaje5" type = "checkbox" name="lenguaje5" value="c#">
+                    <label for = "lenguaje1">PHP</label>
+                    <input id ="lenguaje1" type = "checkbox" name="lenguaje1" value="php">
+                </li>
+                <li><!--nivel de programacion-->
+                    <label for ="nivel">Seleccione su nivel de conocimiento en programacion</label>
+                    <input id="nivel" type="range" class="slider">
+                </li>
+                <li><!--años de  experiencia elegible-->
+                    <span>Cuantos años de experiencia tiene</span>
+                    <label for = "experiencia1">1</label>
+                    <input id="experiencia1" type="radio" name ="boton">
+                    <label for = "experiencia2">2</label>
+                    <input id="experiencia2" type="radio" name ="boton">
+                    <label for = "experiencia3">3</label>
+                    <input id="experiencia3" type="radio" name ="boton">
+                    <label for = "experiencia4">4</label>
+                    <input id="experiencia4" type="radio" name ="boton">
+                    <label for = "experiencia5">5</label>
+                    <input id="experiencia5" type="radio" name ="boton">
+
+                </li>
+                <li><!--comentarios-->
+                    <label for ="text">Comentanos Sobre Tí</label>
+                    <input id = "text" type="textArea" cols ="30" rows = "10" maxlength="300">
+                </li>
+                <li>
+                    <button id ="enviar" type="submit">enviar</button>
+                </li>
+                <li>
+                    <button id="limpiar" type="button" onclick="limpiarDatos()">Limpiar Datos</button>
+                </li>
+            </ul>
+            
+            
+        </form>
+        <script src="js/inicio.js" async defer></script>
+    </body>
+</html>
