@@ -1,0 +1,44 @@
+<form id="form">
+    <ul>
+        <li>
+            <label for="region">Escoja su region</label>
+            <select name="menu" size="1">
+                <option value ="0">Seleccione</option>
+                <option value="1">Valparaíso</option>
+                <option value="2">Metropolitana</option>
+                <option value="3">Bio Bio</option>
+                <option value="4">Araucania</option>
+              </select>
+        </li>
+        <li>
+            <p>Estado Del Clima</p>
+            <label>Soleado</label>
+            <input type="radio" id="soleado" name="clima"value = "soleado">
+            <label>Lluvioso</label>
+            <input type="radio" id="lluvioso" name="clima" value = "lluvioso" >
+            <label>Nublado</label>
+            <input type="radio" id="nublado" name="clima" value = "nublado" >
+            <label>Tormenta</label>
+            <input type="radio" id="tormenta" name="clima" value = "tormenta" >
+        </li>
+        <li>
+            <label for="dia">Día</label>
+            <select name="menu" size="1">
+                <option value ="0">Seleccione</option>
+                <option value="1">Lunes</option>
+                <option value="2">Martes</option>
+                <option value="3">Miercoles</option>
+                <option value="4">Jueves</option>
+                <option value="5">Viernes</option>
+                <option value="6">Sabado</option>
+                <option value="7">Domingo</option>
+            </select>
+        </li>
+        <li>
+            <label for="temperatura">Temperatura</label>
+            <input type="number" id="temperatura">
+        </li>
+    </ul>
+
+    <Button type = "submit" methood = "POST">Actualizar</Button>
+</form>
